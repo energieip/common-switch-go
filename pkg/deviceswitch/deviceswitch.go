@@ -55,7 +55,6 @@ type SwitchConfig struct {
 //SwitchStatus description
 type SwitchStatus struct {
 	Switch
-	Status    string                    `json:"status"` //enable/running/disable etc.
 	ErrorCode *int                      `json:"errorCode"`
 	Services  map[string]ServiceStatus  `json:"services"`
 	Leds      map[string]led.Led        `json:"leds"`
