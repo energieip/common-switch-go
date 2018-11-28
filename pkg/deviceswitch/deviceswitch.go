@@ -80,6 +80,17 @@ func (status Switch) ToJSON() (string, error) {
 	return string(inrec[:]), err
 }
 
+//ToService convert map interface to Service object
+func ToService(val interface{}) (*Service, error) {
+	var service Service
+	inrec, err := json.Marshal(val)
+	if err != nil {
+		return nil, err
+	}
+	err = json.Unmarshal(inrec, &service)
+	return &service, err
+}
+
 // GetServiceStatus return service status
 func (s Service) GetServiceStatus() string {
 	outputActive := &bytes.Buffer{}
