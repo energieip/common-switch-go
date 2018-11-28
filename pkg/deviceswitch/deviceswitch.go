@@ -39,6 +39,7 @@ type Switch struct {
 	Topic                 string `json:"topic"`
 	LastSystemUpgradeDate string `json:"lastUpgradeDate"`
 	IsConfigured          *bool  `json:"isConfigured"`
+	FriendlyName          string `json:"friendlyName"`
 }
 
 //SwitchConfig content
@@ -74,6 +75,15 @@ func (status SwitchStatus) ToJSON() (string, error) {
 // ToJSON dump switch struct
 func (status Switch) ToJSON() (string, error) {
 	inrec, err := json.Marshal(status)
+	if err != nil {
+		return "", err
+	}
+	return string(inrec[:]), err
+}
+
+// ToJSON dump switch config struct
+func (config SwitchConfig) ToJSON() (string, error) {
+	inrec, err := json.Marshal(config)
 	if err != nil {
 		return "", err
 	}
