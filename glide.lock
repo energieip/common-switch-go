@@ -1,20 +1,20 @@
 hash: 443c34b7e138654ef4887d72d12e568e5438396f162a3d90cc5706c412593a6f
-updated: 2018-11-29T09:17:24.767590302+01:00
+updated: 2019-01-02T15:38:42.427036073+01:00
 imports:
 - name: github.com/energieip/common-group-go
-  version: 30e7048ad4cdf92cee7592b924200aba3aa1faa1
+  version: 3582e5cb93d13bd77c8afd71c4a9645254dc1f4f
   subpackages:
   - pkg/groupmodel
 - name: github.com/energieip/common-led-go
-  version: 20e2729cf61ead34bbd2e604f232ce290cb11352
+  version: 6881d23973e801d0f4848d91b84f124042b61493
   subpackages:
   - pkg/driverled
 - name: github.com/energieip/common-sensor-go
-  version: 56bc81b92fc6ca9f63f8714bc54dffcfb3d71f0e
+  version: 1a29593d423a2a742bc861778d42e3448c267444
   subpackages:
   - pkg/driversensor
 - name: github.com/energieip/common-service-go
-  version: f0ebd5f6f0eb573bbcf152bc3df7184ccb140a72
+  version: b961505ab34088b37ffe57641fbb5451dcb03e83
   subpackages:
   - pkg/service
 testImports: []

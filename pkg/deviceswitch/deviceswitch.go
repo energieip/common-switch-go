@@ -18,6 +18,7 @@ type Switch struct {
 	LastSystemUpgradeDate string `json:"lastUpgradeDate"`
 	IsConfigured          *bool  `json:"isConfigured"`
 	FriendlyName          string `json:"friendlyName"`
+	DumpFrequency         int    `json:"dumpFrequency"`
 }
 
 //SwitchConfig content
